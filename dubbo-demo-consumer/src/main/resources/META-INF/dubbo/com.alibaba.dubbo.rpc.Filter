@@ -1,0 +1,1 @@
+exceptionFilter=com.feizi.dubbo.filter.ExceptionFilter

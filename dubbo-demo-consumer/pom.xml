@@ -33,6 +33,13 @@
             <version>4.3.6.RELEASE</version>
         </dependency>
 
+        <!-- import dubbo dependency -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+
         <!-- 因为dubbo服务端需要注册服务到zk中，因此依赖zkClient包 -->
         <dependency>
             <groupId>com.github.sgroschupf</groupId>

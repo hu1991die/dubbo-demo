@@ -11,6 +11,8 @@ public class App {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"META-INF/spring/dubbo-demo-provider.xml"});
         context.start();
 
+        System.out.println("注册服务提供者........");
+
         System.in.read(); // 按任意键退出
     }
 }
