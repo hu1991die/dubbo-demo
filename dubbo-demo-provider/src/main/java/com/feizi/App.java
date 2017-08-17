@@ -3,6 +3,7 @@ package com.feizi;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 入口
  * Created by feizi on 2017/8/15.
  */
 public class App {
