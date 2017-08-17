@@ -19,5 +19,6 @@
     <!-- 和本地bean一样实现服务 -->
     <bean id="demoService" class="com.feizi.dubbo.provider.DemoServiceImpl" />
 
+    <!-- 扩展拦截器-->
     <dubbo:consumer filter="accessFilter"/>
 </beans>
