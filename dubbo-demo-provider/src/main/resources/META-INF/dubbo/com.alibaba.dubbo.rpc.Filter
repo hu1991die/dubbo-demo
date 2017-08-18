@@ -1,1 +1,1 @@
-accessFilter=com.feizi.dubbo.filter.AccessFilter
+#####accessFilter=com.feizi.dubbo.filter.AccessFilter

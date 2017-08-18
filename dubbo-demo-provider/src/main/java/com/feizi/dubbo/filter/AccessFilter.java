@@ -2,9 +2,6 @@ package com.feizi.dubbo.filter;
 
 import com.alibaba.dubbo.common.Constants;
 import com.alibaba.dubbo.common.extension.Activate;
-import com.alibaba.dubbo.common.json.JSON;
-import com.alibaba.dubbo.common.json.JSONArray;
-import com.alibaba.dubbo.common.json.JSONObject;
 import com.alibaba.dubbo.rpc.Filter;
 import com.alibaba.dubbo.rpc.Invocation;
 import com.alibaba.dubbo.rpc.Invoker;
@@ -12,12 +9,10 @@ import com.alibaba.dubbo.rpc.Result;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.dubbo.rpc.RpcException;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 
 /**
- * 访问拦截器（消费方调用信息）
+ * 访问拦截器（消费方调用信息,扩展拦截器）
  * Created by feizi on 2017/8/17.
  */
 @Activate(group = Constants.PROVIDER)

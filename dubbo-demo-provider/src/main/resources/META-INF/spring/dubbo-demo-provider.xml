@@ -10,8 +10,8 @@
     <!-- 使用multicast广播注册中心暴露服务地址 -->
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
 
-    <!-- 用dubbo协议在20880端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="20880" accesslog="true"/>
+    <!-- 用dubbo协议在20880端口暴露服务,打开访问日志记录 -->
+    <dubbo:protocol name="dubbo" port="20880" accesslog="E:\logs\provider\bar.log"/>
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.feizi.dubbo.DemoService" ref="demoService" />
@@ -19,6 +19,6 @@
     <!-- 和本地bean一样实现服务 -->
     <bean id="demoService" class="com.feizi.dubbo.provider.DemoServiceImpl" />
 
-    <!-- 扩展拦截器-->
-    <dubbo:consumer filter="accessFilter"/>
+    <!-- 扩展拦截器, 或者自己配置 -->
+    <!--<dubbo:consumer filter="accessFilter"/>-->
 </beans>
